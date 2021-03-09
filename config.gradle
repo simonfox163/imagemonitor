@@ -1,0 +1,29 @@
+ext {
+    android = [
+            applicationId             : "com.simon.imagemonitor",
+            compileSdkVersion         : 29,
+            minSdkVersion             : 19,
+            targetSdkVersion          : 29,
+            versionCode               : 1,
+            versionName               : "1.0.0",
+            //插件版本号
+            pluginVersionName         : "1.0.0",
+            //jcenter
+            jcenterArchivesVersionName: "1.0.0",
+    ]
+    dependencies = [
+            "okhttp"                  : "com.squareup.okhttp3:okhttp:3.12.1",
+            //将urlconnection代理到okhttp
+            //"okhttp_urlconnection"    : "com.squareup.okhttp3:okhttp-urlconnection:3.12.1",
+            //"okio"                    : "com.squareup.okio:okio:1.15.0",
+            "glide"                   : 'com.github.bumptech.glide:glide:4.11.0',
+            "picasso"                 : 'com.squareup.picasso:picasso:2.71828',
+            "fresco"                  : 'com.facebook.fresco:fresco:2.1.0',
+            "image-loader"            : 'com.nostra13.universalimageloader:universal-image-loader:1.9.5',
+            "MMKV"                    : 'com.tencent:mmkv-static:1.1.0',
+            "FloatWindow"             : 'com.github.yhaolpz:FloatWindow:1.0.9',
+            "androidx"                : 'androidx.appcompat:appcompat:1.1.0',
+            "recylcerview"            : 'androidx.recyclerview:recyclerview:1.0.0',
+            //"image-monitor"            : 'org.zzy.lib.largeimage:large-image-monitor:1.0.0',
+    ]
+}

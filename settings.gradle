@@ -1,0 +1,4 @@
+include ':monitor-plug'
+include ':monitor-api'
+include ':app'
+rootProject.name = "imagemonitor"
