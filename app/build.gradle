@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 // TODO
-//apply plugin: 'image-monitor'
+apply plugin: 'image-monitor'
+
 
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
-
     defaultConfig {
         applicationId rootProject.ext.android["applicationId"]
         minSdkVersion rootProject.ext.android["minSdkVersion"]
@@ -19,6 +19,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions{
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    dexOptions{
+        preDexLibraries = false
+    }
 }
 
 dependencies {
@@ -28,8 +37,6 @@ dependencies {
     implementation rootProject.ext.dependencies["picasso"]
     implementation rootProject.ext.dependencies["fresco"]
     implementation rootProject.ext.dependencies["image-loader"]
-
-
 
     implementation project(':monitor-api')
 }

@@ -24,6 +24,5 @@ ext {
             "FloatWindow"             : 'com.github.yhaolpz:FloatWindow:1.0.9',
             "androidx"                : 'androidx.appcompat:appcompat:1.1.0',
             "recylcerview"            : 'androidx.recyclerview:recyclerview:1.0.0',
-            //"image-monitor"            : 'org.zzy.lib.largeimage:large-image-monitor:1.0.0',
     ]
 }

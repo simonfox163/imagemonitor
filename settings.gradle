@@ -1,4 +1,6 @@
-include ':monitor-plug'
-include ':monitor-api'
-include ':app'
 rootProject.name = "imagemonitor"
+include ':app'
+include ':monitor-api'
+include ':monitor-plug'
+
+
